@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregamento Dinâmico com iframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 80%;
+            height: 500px;
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conteúdo da Página B</h1>
+    <iframe src="{{ url_for('home.home') }}" width="100%" height="500px"></iframe>
+
+</body>
+</html>
